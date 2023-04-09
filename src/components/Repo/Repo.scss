@@ -1,0 +1,55 @@
+.Repo {
+  margin: 0 auto;
+  width: 700px;
+
+  &-NameWrapper1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+
+    p {
+      margin-left: 14px;
+    }
+  }
+
+  &-NameWrapper2 {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  &-NameWrapper2:last-of-type {
+    position: relative;
+    margin-bottom: 64px;
+    border-bottom: 2px solid #56565694;
+  }
+
+  &-Img {
+    width: 100px;
+  }
+
+  &-Name {
+    margin-right: 8px;
+  }
+
+  .nothingFound {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &-ListItem {
+    position: relative;
+    margin-bottom: 8px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 110%;
+      height: 2px;
+      bottom: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom: 2px solid #56565694;
+    }
+  }
+}
