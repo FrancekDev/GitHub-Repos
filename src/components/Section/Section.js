@@ -1,22 +1,19 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Repo from "../Repo/Repo";
-import SearchBar from "../SearchBar/SearchBar";
-
+//style
 import "./Section.scss";
+//components
+import React from "react";
+import Statefull from "../Statefull/Statefull";
 
 export const Section = () => {
   return (
     <>
       <section className="Section">
         <div className="Section-Inner">
-          <SearchBar />
+          <Statefull />
         </div>
       </section>
     </>
   );
 };
-
-Section.propTypes = {};
 
 export default Section;

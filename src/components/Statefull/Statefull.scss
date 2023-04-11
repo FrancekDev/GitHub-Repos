@@ -6,6 +6,7 @@
   }
 
   &-Wrapper {
+    position: relative;
     margin-bottom: 32px;
   }
 
@@ -35,4 +36,13 @@
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25), 0 8px 12px rgba(0, 0, 0, 0.25);
     }
   }
+}
+
+.error {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  color: #ff0000;
+  font-weight: 500;
 }
